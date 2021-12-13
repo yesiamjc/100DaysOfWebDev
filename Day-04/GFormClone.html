@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GForm Clone</title>
+</head>
+<body>
+    <img src="Header.jpg" alt="Check your connectivity">
+    <h1>Event registration</h1>
+    <hr>
+    Event Timing: January 4th-6th, 2016 <br>
+    Event Address: 123 Your Street Your City, ST 12345 <br>
+    Contact us at (123) 456-7890 or no_reply@example.com <br>
+    <form action="backend.php">
+    <br>
+    <label for="name">Name </label>
+    <div><input type="text" name="myName" id="name"></div>
+    <br>
+    <label for="email">Email*</label>
+    <div><input type="email" name="myEmail" id="email"></div>
+    <br>
+    <label for="org">Organization*</label>
+    <div><input type="text" name="myOrg" id="org"></div>
+    <br>
+    <label for="days">What days will you attend?*</label>
+    <div><input type="checkbox" name="myDays" id="days"> Day 1 <br>
+         <input type="checkbox" name="myDays" id="days"> Day 2 <br>
+         <input type="checkbox" name="myDays" id="days"> Day 3 <br>
+         <input type="text" name="myDays" id="days"> Other
+    </div>
+    <br>
+    <label for="Dietary">Dietary restrictions*</label>
+    <div><input type="radio" name="myDietary" id="Dietary"> Day 1 <br>
+         <input type="radio" name="myDietary" id="Dietary"> Day 2 <br>
+         <input type="radio" name="myDietary" id="Dietary"> Day 3 <br>
+         <input type="radio" name="myDietary" id="Dietary"> Day 3 <br>
+         <input type="radio" name="myDietary" id="Dietary"> Day 3 <br>
+         <input type="text" name="myDietary" id="Dietary"> Other
+    </div>
+    <br>
+    <label for="t&c">I understand that I will have to pay $$ upon arrival*</label>
+    <div><input type="checkbox" name="myT&c" id="t&c">Yes <br>
+    </div>
+    <br>
+    </form>
+</body>
+</html>
