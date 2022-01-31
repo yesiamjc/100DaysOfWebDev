@@ -1,0 +1,168 @@
+/*
+*{
+
+} (To reset things up)*/ 
+a{
+    color: blanchedalmond;
+    background-color: cyan ;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: chartreuse;
+}
+/*
+a:visited{
+    color: black;
+}*/
+h3{
+    color: brown;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* Shorter way */
+    font: normal 16px Arial,Halvetica,sans-serif;
+    line-height: 2em;
+}
+.box-1{
+    background-color: black;
+    color: blanchedalmond;
+    margin: 0;
+    border: 5px red solid; 
+    border: 5px red solid; /* T-R-B-L*/
+    margin: 20px ; /* T-R-B-L*/
+    padding: 20px; /* T-R-B-L*/
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.box-1 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+.box-2{
+    background-color: burlywood;
+    border: 3px red dotted;
+    margin: 20px;
+    padding: 20px; 
+}
+.cats{
+    border: 3px double;
+    border-radius: 15px ;
+    
+    margin: 20px;
+    padding: 20px; 
+}
+.cats h2{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.cats ul{
+    padding: 0;
+    list-style: none;
+    list-style-image: url("../Images/check mark.png");
+}
+.cats li{
+    border-bottom: black dotted;
+    padding: 20px;
+}
+.form{
+    background-color: blueviolet;
+    border-radius: 15px;
+    padding: 20px;
+}
+.form h1{
+    text-align: center;
+}
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"],.my-form textarea,.my-form input[type="email"]{
+    padding: 6px;
+    width: 100%;
+}
+.my-form input[type="submit"]{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+.button{
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.hehe1{
+    width: 33.3%;
+    border: 3px black dotted;
+    padding: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    float:left
+}
+#main-box{
+    width: 70%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+#side-bar{
+    width: 30%;
+    margin-top: 10px;
+    background-color: fuchsia;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: right;
+}
+.spy{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+    background-image: url(../Images/Bg.jpg);
+    background-repeat: no-repeat;
+    background-position:center center ;
+}
+.spy h3{
+    position: absolute;
+    top: 10px;
+   left: 20px;
+}
+.spy h4{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.fix-me{
+    position: fixed;
+    background-color: black;
+    left: 0;
+    top: 400px;
+}
+.My-List li:first-child{
+  background: chartreuse;
+}
+.My-List li:last-child{
+    background: yellow;
+  }
+.My-List li:nth-child(5){
+    background: red;
+}
+.My-List li:nth-child(even){
+    background: pink;
+}
