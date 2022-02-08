@@ -1,0 +1,169 @@
+/* Common styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: Georgia, serif;
+  }
+  
+  body {
+    background-color: #fbfbfb;
+  }
+  
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main p {
+    margin-bottom: 0;
+  }
+  
+  /* Example-specific styles */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    margin: 0 2rem;
+  }
+  
+  .content-area {
+    width: calc(66.6% - 1rem);
+    margin-right: 1rem;
+    float: left;
+  }
+  
+  .sidebar {
+    width: 33.3%;
+    float: right;
+    padding: 1rem;
+  }
+  
+  .main-header {
+    height: 3rem;
+  }
+  
+  .logo {
+    width: 20%;
+    float: left;
+    height: 100%;
+    line-height: 3rem;
+  }
+  
+  .main-menu {
+    width: 79%;
+    float: right;
+    height: 100%;
+    line-height: 3rem;
+    text-align: right;
+  }
+  
+  .main-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-menu__item {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .main-menu .main-menu__item:last-of-type {
+    margin-right: 0;
+  }
+  
+  .content-area-wrapper, .sponsors-wrapper, .main-header {
+    margin-bottom: 2rem;
+  }
+  
+  .sponsors {
+    display: table;
+    border-spacing: 1rem;
+    width: 100%;
+  }
+  
+  .sponsor {
+    width: 20%;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 0.625rem;
+  }
+  
+  .sponsor img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media all and (max-width: 992px) {
+    .container {
+      margin: 0 1rem;
+    }
+    
+    .sponsors {
+      border-spacing: 0.5rem;
+    }
+  }
+  
+  @media all and (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+    
+    .content-area, .sidebar {
+      float: none;
+    }
+  
+    .content-area {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .sidebar {
+      width: 66.6%;
+    }
+    
+    .sponsors, .sponsor {
+      display: block;
+    }
+  
+    .sponsor {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+  
+  @media all and (max-width: 576px) {
+    .main-menu, .logo {
+      float: none;
+      width: 100%;
+    }
+  
+    .main-menu {
+      text-align: left;
+      margin-top: 2rem;
+    }
+  
+    .main-header {
+      height: auto;
+    }
+  
+    .logo, .main-menu {
+      line-height: initial;
+    }
+  }
