@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>log in page</title>
+</head>
+<body>
+    <div id="successful_login" class="fix-middle">
+        <div class="container text-center">
+          <h1>Welcome back to the internet!</h1>
+          <p>You've successfully managed to log into a nonexistant account in order to test a login dialog box.<br> If you like it, you are welcomed to use it wherever you want, no strings attached.<br><br><a href="#" class="link dialog-reset">Rerun the whole thing.</a></p>
+        </div>
+      </div>
+      <div id="successful_registration" class="fix-middle">
+        <div class="container text-center">
+          <h1>Welcome to the internet!</h1>
+          <p>You've successfully managed to register for a nonexistant account in order to test a registration dialog box.<br> If you like it, you are welcomed to use it wherever you want, no strings attached.<br><br><a href="#" class="link dialog-reset">Rerun the whole thing.</a></p>
+        </div>
+      </div>
+      
+      <div id="dialog" class="dialog dialog-effect-in">
+        <div class="dialog-front">
+          <div class="dialog-content">
+            <form id="login_form" class="dialog-form" action="" method="POST">
+              <fieldset>
+                <legend>Log in</legend>
+                <div class="form-group">
+                  <label for="user_username" class="control-label">Username:</label>
+                  <input type="text" id="user_username" class="form-control" name="user_username" autofocus/>
+                </div>
+                <div class="form-group">
+                  <label for="user_password" class="control-label">Password:</label>
+                  <input type="password" id="user_password" class="form-control" name="user_password"/>
+                </div>
+                <div class="text-center pad-top-20">
+                  <p>Have you forgotten your<br><a href="#" class="link"><strong>username</strong></a> or <a href="#" class="link"><strong>password</strong></a>?</p>
+                </div>
+                <div class="pad-top-20 pad-btm-20">
+                  <input type="submit" class="btn btn-default btn-block btn-lg" value="Continue">
+                </div>
+                <div class="text-center">
+                  <p>Do you wish to register<br> for <a href="#" class="link user-actions"><strong>a new account</strong></a>?</p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="dialog-back">
+          <div class="dialog-content">
+            <form id="register_form" class="dialog-form" action="" method="POST">
+              <fieldset>
+                <legend>Register</legend>
+                <div class="form-group">
+                  <label for="user_username" class="control-label">Username:</label>
+                  <input type="text" id="user_username" class="form-control" name="user_username"/> 
+                </div>
+                <div class="form-group">
+                  <label for="user_password" class="control-label">Password:</label>
+                  <input type="password" id="user_password" class="form-control" name="user_password"/>
+                </div>
+                <div class="form-group">
+                  <label for="user_cnf_password" class="control-label">Confirm password:</label>
+                  <input type="password" id="user_cnf_password" class="form-control" name="user_cnf_password"/>
+                </div>
+                <div class="form-group pad-top-20 form-group-checkbox">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="user_terms" name="user_terms">
+                      I have read and I agree with the Terms and Conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="pad-btm-20">
+                  <input type="submit" class="btn btn-default btn-block btn-lg" value="Continue"/>
+                </div>
+                <div class="text-center">
+                  <p>Return to <a href="#" class="link user-actions"><strong>log in page</strong></a>?</p>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
